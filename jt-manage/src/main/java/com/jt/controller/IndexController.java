@@ -7,7 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
-	//restFul风格
+	/**
+	 * restFul风格
+	 * @param moduleName
+	 * @return
+	 */
 	@RequestMapping("/page/{moduleName}")
 	public String module(@PathVariable String moduleName) {
 		return moduleName;
